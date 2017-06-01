@@ -1,6 +1,6 @@
 # ngx_custom_worker_module
 
-ngx_custom_worker_module can set the number of processes set with `worker_processes auto` as any factor.
+ngx_custom_worker_module can set the number of processes with any factor of `worker_processes auto`.
 
 ## Configuration
 

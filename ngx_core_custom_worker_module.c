@@ -8,8 +8,8 @@ static char *ngx_worker_process_spare(ngx_conf_t *cf, ngx_command_t *cmd, void *
 static ngx_command_t ngx_core_custom_worker_commands[] = {
     {ngx_string("worker_processes_factor"), NGX_MAIN_CONF | NGX_DIRECT_CONF | NGX_CONF_TAKE1, ngx_worker_process_factor,
      0, 0, NULL},
-    {ngx_string("worker_process_spare"), NGX_MAIN_CONF | NGX_DIRECT_CONF | NGX_CONF_TAKE1, ngx_worker_process_spare, 0,
-     0, NULL},
+    {ngx_string("worker_processes_spare"), NGX_MAIN_CONF | NGX_DIRECT_CONF | NGX_CONF_TAKE1, ngx_worker_process_spare,
+     0, 0, NULL},
     ngx_null_command};
 
 static ngx_core_module_t ngx_core_custom_worker_module_ctx = {ngx_string("core_custom_worker"), NULL, NULL};

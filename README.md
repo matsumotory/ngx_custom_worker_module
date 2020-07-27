@@ -30,9 +30,9 @@ worker_processes        auto;
 worker_processes_spare 2;
 ```
 
-### both
+### set worker_processes_factor and worker_processes_spare
 
-factor and spares are applied in the order in which they are set
+The worker_processes_factor is applied before the worker_processes_spare.
 
 - the number of worker processes is __10__ if the number of cpu threads is 4.
 
@@ -43,9 +43,7 @@ worker_processes_factor 3;
 worker_processes_spare 2;
 ```
 
-
-- the number of worker processes is __6__ if the number of cpu threads is 4.
-
+- the number of worker processes is __10__ if the number of cpu threads is 4.
 
 ```nginx
 worker_processes        auto;
